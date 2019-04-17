@@ -1,0 +1,52 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.titleMEssage {
+  position: absolute;
+  width: 100%;
+  height: 16rem;
+  top: 50%;
+  margin-top: -7rem;
+  z-index: 5;
+}
+
+.titleMEssage .heading p {
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.titleMEssage .heading .main {
+  font-size: 50px;
+}
+
+.titleMEssage .heading .sub {
+  font-size: 23px;
+}
+
+.slides-navigation {
+  z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+  left: 1rem;
+  background-image: url(../images/icons/prev.png);
+}
+
+.slides-navigation a.next {
+  right: 1rem;
+  background-image: url(../images/icons/next.png);
+}
