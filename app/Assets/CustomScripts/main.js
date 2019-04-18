@@ -45,6 +45,8 @@ $(document).ready(function() {
   });
 
   var skillsTopOffset = $("#skills").offset().top;
+  var statsTopOffset = $("#stats").offset().top;
+  var countUpFinished = false;
   $(window).scroll(function() {
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
       /// Easy pie chart
@@ -61,6 +63,19 @@ $(document).ready(function() {
             .text(Math.round(percent));
         }
       });
+    }
+
+    if (
+      !countUpFinished &&
+      window.pageYOffset > statsTopOffset - $(window).height() + 200
+    ) {
+      /// Count Up
+      $(".counter").each(function() {
+        var element = $(this);
+        var endVal = parseInt(element.text());
+        element.countup(endVal);
+      });
+      countUpFinished = true;
     }
   });
 });
