@@ -50,3 +50,11 @@
   right: 1rem;
   background-image: url(../images/icons/next.png);
 }
+
+#about {
+  padding: 100px 0 100px 0;
+}
+
+.aboutImage {
+  max-width: 100%;
+}
