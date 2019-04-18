@@ -14,8 +14,12 @@
       href="./Assets/Library/SuperSlides/css/superslides.css"
     />
     <link rel="stylesheet" href="./Assets/CustomStyles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./Assets/Library/OwlCarousel/css/owl.carousel.min.css"
+    />
   </head>
-  <section id="slides">
+  <div id="slides">
     <div class="overlay"></div>
 
     <div class="slides-container">
@@ -35,32 +39,87 @@
       <a href="#" class="next"></a>
       <a href="#" class="prev"></a>
     </nav>
-  </section>
-  <section id="about" class="container">
-    <div class="row">
-      <div class="col-md-5">
-        <img
-          src="./Assets/images/about.jpg"
-          alt="My cool image :D"
-          class="aboutImage"
-        />
+  </div>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            src="./Assets/images/about.jpg"
+            alt="My cool image :D"
+            class="aboutImage"
+          />
+        </div>
+        <div class="col md-7">
+          <h4>My name is Tinh Ngo</h4>
+          <p>
+            Hi there! I'm Tinh Ngo from Quang Nam, Viet Nam. I currently work as
+            a Software Engineer at Success Software Services. I have many years
+            experience creating software, mobile apps and websites for both
+            clients, and for myself. I have experience programming in many
+            different languages, libraries, frameworks such as C#, Javascript,
+            Angular, Ionic, Xamarin, ASP.NET MVC, ASP.NET Core,... And also work
+            as a RPA Developer for develop bots for my clients and myself as
+            well.
+          </p>
+          <p>
+            I can use English well for communication, read and clarify
+            requirements, document as well. I also good at reseach and aplly new
+            technologies that needed.
+          </p>
+        </div>
       </div>
-      <div class="col md-7">
-        <h4>My name is Tinh Ngo</h4>
-        <p>
-          Hi there! I'm Tinh Ngo from Quang Nam, Viet Nam. I currently work as a
-          Software Engineer at Success Software Services. I have many years
-          experience creating software, mobile apps and websites for both
-          clients, and for myself. I have experience programming in many
-          different languages, libraries, frameworks such as C#, Javascript,
-          Angular, Ionic, Xamarin, ASP.Net MVC, ASP.Net Core,... And also work
-          as a RPA Developer for develop bots for my clients and myself as well.
-        </p>
-        <p>
-          I can use English well for communication, read and clarify
-          requirements, document as well. I also good at reseach and aplly new
-          technologies that needed.
-        </p>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>TECHNICAL SKILLS</h2>
+          <p>A representation of my proficiency in each skill</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="skill text-center">
+            <span class="chart" data-percent="90">
+              <span class="percent">90</span>
+              <canvas height="152" width="152"></canvas>
+            </span>
+            <h4>C#</h4>
+            <p>My main programming language</p>
+          </div>
+          <div class="skill text-center">
+              <span class="chart" data-percent="78">
+                <span class="percent">78</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>ASP.NET MVC</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+          <div class="skill text-center">
+            <span class="chart" data-percent="85">
+              <span class="percent">85</span>
+              <canvas height="152" width="152"></canvas>
+            </span>
+            <h4>HTML 5</h4>
+            <p>Used in most of my web based projects</p>
+          </div>
+          <div class="skill text-center">
+            <span class="chart" data-percent="67">
+              <span class="percent">67</span>
+              <canvas height="152" width="152"></canvas>
+            </span>
+            <h4>CSS</h4>
+            <p>A lot of experienced in this skill</p>
+          </div>
+          <div class="skill text-center">
+            <span class="chart" data-percent="80">
+              <span class="percent">80</span>
+              <canvas height="152" width="152"></canvas>
+            </span>
+            <h4>SQL Server</h4>
+            <p>My main database system of choice</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -70,6 +129,8 @@
     <script src="./Assets/Library/Bootstrap/js/bootstrap.min.js"></script>
     <script src="./Assets/Library/SuperSlides/js/jquery.superslides.min.js"></script>
     <script src="./Assets/Library/Typed/typed.min.js"></script>
+    <script src="./Assets/Library/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script src="./Assets/Library/EasyPieChart/js/jquery.easypiechart.min.js"></script>
     <script src="./Assets/CustomScripts/main.js"></script>
   </body>
 </html>
