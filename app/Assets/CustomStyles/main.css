@@ -61,11 +61,20 @@ section {
   padding: 100px 0 100px 0;
 }
 
+#about h4 {
+  font-size: 3rem;
+}
+
+#about p {
+  line-height: 1.7rem;
+}
+
 .aboutImage {
   max-width: 100%;
 }
 
-#skills {
+#skills,
+#contact {
   background-color: #1abc9c;
   color: #fff;
 }
@@ -149,4 +158,19 @@ section {
   font-size: 45px;
   margin-left: -20%;
   color: #444;
+}
+
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #1abc9c;
+  background-color: white;
 }
