@@ -58,7 +58,7 @@ body {
 }
 
 section {
-  padding: 100px 0 100px 0;
+  padding: 70px 0 70px 0;
 }
 
 #about h4 {
@@ -314,4 +314,27 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+#navigation {
+  background-color: #1abc9c;
+  padding: 12px 10px;
+  z-index: 100;
+}
+
+#navagation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/icons/menu.png");
+  background-size: 100%;
 }
