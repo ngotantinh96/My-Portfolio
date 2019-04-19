@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+  #filters {
+    padding-left: 0;
+  }
+  #filters li {
+    margin-top: 1.2rem;
+  }
+}
