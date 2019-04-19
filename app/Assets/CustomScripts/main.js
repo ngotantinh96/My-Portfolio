@@ -26,7 +26,6 @@ $(document).ready(function() {
     items: 5,
     autoplay: true,
     autoplayTimeout: 5000,
-    dots: true,
     //autoplayHoverPause: true,
     autoplaySpeed: 1000,
     responsive: {
@@ -107,5 +106,12 @@ $(document).ready(function() {
     });
 
     return false;
+  });
+
+  $("#navigation li a").click(function(e) {
+    e.preventDefault();
+    var targetElement = $(this).attr("href");
+    var targetPosition = $(targetElement).offset().top;
+    $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
   });
 });
