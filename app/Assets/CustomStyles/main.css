@@ -291,7 +291,7 @@ section {
 }
 
 .items .item:hover .projectLink {
- right: 0px;
+  right: 0px;
 }
 
 .items .item:hover img {
@@ -304,4 +304,14 @@ section {
 
 .items {
   padding: 0;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 5px;
+}
+
+footer p {
+  margin: 0;
 }
