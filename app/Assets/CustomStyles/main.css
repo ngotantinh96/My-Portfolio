@@ -245,6 +245,11 @@ section {
   height: 40px;
   position: relative;
   display: inline-block;
+  -webkit-transition: all 0.35s linear 0.2s;
+  -moz-transition: all 0.35s linear 0.2s;
+  -o-transition: all 0.35s linear 0.2s;
+  -ms-transition: all 0.35s linear 0.2s;
+  transition: all 0.35s linear 0.2s;
 }
 
 .items .imageOverlay {
@@ -255,13 +260,31 @@ section {
   left: 0px;
   top: 0px;
   opacity: 0;
-  -webkit-transition: all 0.4s linear 0.05s;
-  -moz-transition: all 0.4s linear 0.05s;
-  -o-transition: all 0.4s linear 0.05s;
-  -ms-transition: all 0.4s linear 0.05s;
-  transition: all 0.4s linear 0.05s;
+  -webkit-transition: all 0.35s linear 0.2s;
+  -moz-transition: all 0.35s linear 0.2s;
+  -o-transition: all 0.35s linear 0.2s;
+  -ms-transition: all 0.35s linear 0.2s;
+  transition: all 0.35s linear 0.2s;
 }
 
 .items .item:hover .imageOverlay {
   opacity: 1;
+}
+
+.items .openButton {
+  float: left;
+  left: -200px;
+}
+
+.items .projectLink {
+  float: right;
+  right: -200px;
+}
+
+.items .item:hover .openButton {
+  left: 0px;
+}
+
+.items .item:hover .projectLink {
+ right: 0px;
 }
